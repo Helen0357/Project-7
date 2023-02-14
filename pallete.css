@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgb(224, 197, 218);
+}
+.colors .container {
+    width: 80%;
+     margin: 30px auto;
+     padding: 20px;
+}
+.colors .container .ulPallete {
+    display: grid;
+     grid-template-columns: repeat(auto-fill , minmax(160px ,1fr));
+     list-style: none;
+     gap: 30px;
+
+}
+.colors .container .ulPallete .liPallete {
+background-color: white;
+text-align: center;
+height: 220px;
+padding: 6px;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.2s;
+}
+.colors .container .ulPallete .liPallete:hover .liDiv {
+    filter: brightness(105%);
+}
+.colors .container .ulPallete .liPallete:active {
+    transform: scale(0.95);
+}
+.colors .container .ulPallete .liPallete .liDiv {
+/* margin: 10px auto; */
+background-color: skyblue;
+width:100%;
+height: 86%;
+margin-bottom: 7px;
+transition: 0.4s;
+
+
+}
+.colors .container .ulPallete .liPallete .liSpan {
+
+background-color:transparent;
+font-weight: bold;
+text-transform: uppercase;
+}
+.colors .btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-color: transparent;
+    font-size: 18px;
+    padding: 9px 15px;
+    color: rgb(54, 53, 53);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.colors .btn:hover {
+    background-color: rgb(176, 162, 187);
+    border: 2px dotted white;
+    color: white;
+    letter-spacing: 2px;
+}
